@@ -1,16 +1,20 @@
-## Hi there 👋
 
-<!--
-**yRapha/yRapha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hello world, my name is Raphael, welcome 👋
 
-Here are some ideas to get you started:
+Desenvolvedor com foco em **Python** e **C#**, sempre buscando aprender e evoluir. Tenho experiência em frameworks como **.NET**, **ASP.NET** e **Django**, além de trabalhar com bancos de dados como **SQL Server**, **MongoDB** e **MySQL**.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Ferramentas que utilizo: **Visual Studio** e **Docker**.
+
+---
+
+## 🚀 Tecnologias
+
+- **Linguagens**: Python, C#
+- **Frameworks**: .NET, ASP.NET, Django
+- **Banco de Dados**: SQL Server, MongoDB, MySQL
+- **Ferramentas**: Visual Studio, Docker
+
+---
+
+✨ Explore meus repositórios para conferir alguns dos meus projetos!## Hi there 👋
+
