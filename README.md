@@ -16,5 +16,5 @@ Ferramentas que utilizo: **Visual Studio** e **Docker**.
 
 ---
 
-✨ Explore meus repositórios para conferir alguns dos meus projetos!## Hi there 👋
+✨ Explore meus repositórios para conferir alguns dos meus projetos!
 
