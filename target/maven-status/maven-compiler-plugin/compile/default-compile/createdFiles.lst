@@ -1,3 +1,7 @@
 com/raphael/whatsapp/WhatsAppAutomation.class
+com/raphael/whatsapp/WhatsAppGUI.class
+com/raphael/whatsapp/WhatsAppGUI$OpenWhatsAppListener.class
 com/raphael/whatsapp/ExampleUsage.class
+com/raphael/whatsapp/WhatsAppGUI$StartBotListener.class
+com/raphael/whatsapp/WhatsAppGUI$SendMessageListener.class
 com/raphael/whatsapp/WhatsAppBot.class

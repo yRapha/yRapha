@@ -1,37 +1,72 @@
+# 🚀 WhatsApp Automation com Interface Gráfica
 
-# Hello World, my name is **Raphael** 👋
+Projeto Java completo para automatizar mensagens no WhatsApp Web usando Selenium WebDriver com interface gráfica moderna.
 
-Desenvolvedor com foco em **Python** e **C#**, sempre buscando aprender e evoluir.
+## ▶️ EXECUÇÃO RÁPIDA - BOTÃO EXECUTAR
 
-Tenho experiência em frameworks como **.NET**, **ASP.NET** e **Django**, além de trabalhar com bancos de dados como **SQL Server**, **MongoDB** e **MySQL**.
+### 🖥️ **Interface Gráfica (Recomendado)**
+
+**Linux/Mac:**
+```bash
+./run_gui.sh
+```
+
+**Windows:**
+```bash
+run_gui.bat
+```
+
+### 🎯 **Como usar:**
+1. **Execute** um dos comandos acima
+2. **Clique** no botão "▶️ EXECUTAR WHATSAPP AUTOMATION"
+3. **Aguarde** o Chrome abrir no WhatsApp Web
+4. **Escaneie** o QR Code com seu celular
+5. **Use** os botões para enviar mensagens! ✅
+
+### ⚡ **Execução Manual:**
+```bash
+mvn clean compile
+java -cp target/classes:target/dependency/* com.raphael.whatsapp.WhatsAppGUI
+```
+
+## 🚀 Funcionalidades
+
+- ✅ **Interface gráfica moderna** com botão EXECUTAR
+- ✅ **Abre automaticamente** o WhatsApp Web 
+- ✅ **Busca e seleção** inteligente de contatos
+- ✅ **Envio automatizado** de mensagens
+- ✅ **Bot interativo** com comandos avançados
+- ✅ **Logs em tempo real** na interface
+- ✅ **Tratamento de erros** robusto
+
+## 📋 Requisitos
+
+- ☕ Java 11 ou superior
+- 🔧 Maven 3.6+ 
+- 🌐 Chrome/Chromium instalado
+- 📱 WhatsApp no celular
+- 🌐 Conexão com internet
+
+## 🎯 Exemplo Prático
+
+1. **Execute:** `./run_gui.sh` (Linux/Mac) ou `run_gui.bat` (Windows)
+2. **Clique:** "▶️ EXECUTAR WHATSAPP AUTOMATION"  
+3. **Aguarde:** Chrome abrir no WhatsApp Web
+4. **Escaneie:** QR Code com seu celular
+5. **Digite:** Nome = "João", Mensagem = "Olá!"
+6. **Clique:** "📱 Enviar Mensagem"
+7. **Pronto!** ✅
+
+## 📖 Documentação
+
+- 📄 [**COMO_USAR.md**](./COMO_USAR.md) - Guia completo do botão EXECUTAR
+- 📄 [**WHATSAPP_AUTOMATION_README.md**](./WHATSAPP_AUTOMATION_README.md) - Documentação técnica completa
 
 ---
 
-## 🚀 Tecnologias
+**💡 Dica:** O botão EXECUTAR faz tudo automaticamente - só clique e aguarde! 🚀
 
-- **Linguagens**:
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" height="40"/>
-
-- **Frameworks**:
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original-wordmark.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="40" height="40"/>
-
-- **Banco de Dados**:
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40"/>
-
-- **Ferramentas**:
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" height="40"/>
-
----
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yRapha&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="Estatísticas do yRapha" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yRapha&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="Linguagens do yRapha" />
-</div>
-
-
----
-
-✨ Explore meus repositórios para conferir alguns dos meus projetos!
+*Desenvolvido por **Raphael** com ❤️*
 
 
 

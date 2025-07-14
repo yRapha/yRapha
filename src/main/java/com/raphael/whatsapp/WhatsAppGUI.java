@@ -45,12 +45,13 @@ public class WhatsAppGUI extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);
         
-        // Botão para abrir WhatsApp
-        btnOpenWhatsApp = new JButton("🚀 Abrir WhatsApp Web");
-        btnOpenWhatsApp.setFont(new Font("Arial", Font.BOLD, 16));
+        // Botão principal EXECUTAR
+        btnOpenWhatsApp = new JButton("▶️ EXECUTAR WHATSAPP AUTOMATION");
+        btnOpenWhatsApp.setFont(new Font("Arial", Font.BOLD, 18));
         btnOpenWhatsApp.setBackground(new Color(37, 211, 102));
         btnOpenWhatsApp.setForeground(Color.WHITE);
-        btnOpenWhatsApp.setPreferredSize(new Dimension(250, 50));
+        btnOpenWhatsApp.setPreferredSize(new Dimension(350, 60));
+        btnOpenWhatsApp.setBorder(BorderFactory.createRaisedBevelBorder());
         btnOpenWhatsApp.addActionListener(new OpenWhatsAppListener());
         
         gbc.gridx = 0;
@@ -91,6 +92,7 @@ public class WhatsAppGUI extends JFrame {
         btnSendMessage.setBackground(new Color(34, 139, 34));
         btnSendMessage.setForeground(Color.WHITE);
         btnSendMessage.setPreferredSize(new Dimension(200, 40));
+        btnSendMessage.setEnabled(false); // Desabilitado inicialmente
         btnSendMessage.addActionListener(new SendMessageListener());
         
         gbc.gridx = 0;
@@ -104,6 +106,7 @@ public class WhatsAppGUI extends JFrame {
         btnStartBot.setBackground(new Color(255, 140, 0));
         btnStartBot.setForeground(Color.WHITE);
         btnStartBot.setPreferredSize(new Dimension(200, 40));
+        btnStartBot.setEnabled(false); // Desabilitado inicialmente
         btnStartBot.addActionListener(new StartBotListener());
         
         gbc.gridx = 0;
@@ -124,8 +127,8 @@ public class WhatsAppGUI extends JFrame {
         add(scrollPane, BorderLayout.SOUTH);
         
         // Mensagem inicial
-        appendLog("WhatsApp Automation iniciado!");
-        appendLog("Clique em 'Abrir WhatsApp Web' para começar.");
+        appendLog("🤖 WhatsApp Automation PRONTO!");
+        appendLog("👆 Clique em 'EXECUTAR' para abrir o WhatsApp Web e começar!");
     }
     
     private void appendLog(String message) {
@@ -139,7 +142,9 @@ public class WhatsAppGUI extends JFrame {
     private class OpenWhatsAppListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            appendLog("Abrindo WhatsApp Web...");
+            appendLog("🚀 EXECUTANDO AUTOMAÇÃO...");
+            appendLog("📱 Abrindo WhatsApp Web no navegador...");
+            btnOpenWhatsApp.setText("⏳ EXECUTANDO...");
             btnOpenWhatsApp.setEnabled(false);
             
             new Thread(() -> {
@@ -147,13 +152,17 @@ public class WhatsAppGUI extends JFrame {
                     WhatsAppAutomation automation = new WhatsAppAutomation();
                     automation.openWhatsApp();
                     SwingUtilities.invokeLater(() -> {
-                        appendLog("WhatsApp Web aberto! Escaneie o QR Code para fazer login.");
+                        appendLog("✅ WhatsApp Web aberto com sucesso!");
+                        appendLog("📲 Escaneie o QR Code no seu celular para fazer login.");
+                        appendLog("✨ Após o login, use os botões abaixo para enviar mensagens!");
                         btnSendMessage.setEnabled(true);
                         btnStartBot.setEnabled(true);
+                        btnOpenWhatsApp.setText("✅ EXECUTADO COM SUCESSO");
                     });
                 } catch (Exception ex) {
                     SwingUtilities.invokeLater(() -> {
-                        appendLog("Erro ao abrir WhatsApp: " + ex.getMessage());
+                        appendLog("❌ ERRO ao executar: " + ex.getMessage());
+                        btnOpenWhatsApp.setText("❌ ERRO - CLIQUE PARA TENTAR NOVAMENTE");
                         btnOpenWhatsApp.setEnabled(true);
                     });
                 }
@@ -224,12 +233,7 @@ public class WhatsAppGUI extends JFrame {
     }
     
     public static void main(String[] args) {
-        // Configurar look and feel
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeel());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        // Configurar look and feel padrão
         
         SwingUtilities.invokeLater(() -> {
             new WhatsAppGUI().setVisible(true);
